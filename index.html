@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink Water Notifier</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="icon" href="./water-bottle.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="message-section mt-4">
+            <div class="alert alert-danger text-uppercase notify-off">
+                Notification Off !
+            </div>
+            <div class="alert alert-success text-uppercase notify-on">
+                Notification On , notification time every 30 minutes.
+            </div>
+        </div>
+        <div class="header-section form-group">
+            <marquee class="bg-primary text-white pt-2 pb-2 font-weight-bold text-uppercase">
+                Welcome to drink water notifier
+            </marquee>
+        </div>
+        <div class="form-group">
+            <button class="btn start-notification btn-success text-uppercase" onclick="onStart()">Start Notification</button>
+            <button class="btn stop-notification btn-danger text-uppercase" onclick="onStop()">Stop Notification</button>
+        </div>
+        <div class="alert alert-info text-uppercase">
+            NOTE : Be hydrated.
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
